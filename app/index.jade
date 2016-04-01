@@ -1,0 +1,67 @@
+include ./components/menu/menu
+
+doctype html
+html(lang="en")
+  head
+    title VIS Fuerza [in]necesaria.
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="css/index.css")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+  body
+    +menu("index")
+    .intro
+      .vCenter
+        .content
+          h1#logo.title
+            .vis 
+              | VIS
+            div 
+              | Fuerza
+              br 
+              | [in]necesaria
+          .divider.hard
+          .subtitle
+            | el sonido del México post nacional
+        div.flechaContainer
+          img(class="flechaScroll" src="assets/flecha.png", alt="scroll")
+      .divider
+    section
+      article.info
+        h2
+          | La palabra violencia proviene del latín Violenta; 
+          br
+          | La raíz vis significa fuerza.
+        .divider.medium
+        p
+          | El proyecto Vis. Fuerza (in)necesaria. El sonido del México post-nacional consiste en realizar un corpus de obras en las que,
+          br
+          |  a través del sonido como material de significación, se explore el tema de la violencia provocada por la guerra del narco y la guerra contra el narco en el México contemporáneo (2006-2016), y sus derivaciones en la vida cotidiana de la población civil. 
+          br
+          | Ante la propensión de cosificar a los afectados por la violencia en México y convertirlos en números y estadísticas, y ante una situación de desamparo jurídico, el recuperar las experiencias de estos ciudadanos y ponerlas en circulación a través de objetos estéticos significativos, puede contribuir a la construcción de una arena para la discusión y reflexión sobre la realidad circundante. 
+          br
+          br
+          | A través de este proyecto busco propiciar la participación e interacción de los individuos que viven en un estado de excepción dado por la violencia exacerbada que ejercen los distintos grupos de poder –legítimos e ilegítimos– en determinadas zonas de México.
+          
+    .instalacion
+      div
+        .instalacion_info
+          .title
+            .anios
+              | 2014-2015
+            .dia
+              | 01
+            .subtitle
+              | V.F(I)N
+          div
+            .divider.mini.myn
+          .descripcion
+            | Está compuesta por 74 reproductores digitales de audio en forma de pistola Carcal F 9x19 mm. Cada uno de estos dispositivos tiene integrada una tarjeta Micro-SD que contiene el sonido –en formato mp3- que corresponde a la grabación de una balacera. Estos audios tienen su origen en registros de video que a través de teléfonos celulares realizan los ciudadanos que se encuentran atrapados en estas situaciones de peligro, y que posteriormente ponen en circulación a través de las redes sociales y plataformas como YouTube. V. F(i)n_1 se ha presentado entre 2015 y 2016 en el Museo de Arte Contemporáneo de Tamaulipas (MACT) en Matamoros, el Museo de Arte Carrillo Gil (MACG) en la Ciudad de México y el Museo de Arte Contemporáneo de Bogotá (MAC) en Colombia.
+      div.pistolas
+        
+        
+        
+        
+    include ./components/footer/footer
+    script(src="js/app.js")

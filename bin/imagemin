@@ -1,0 +1,1 @@
+imagemin app/assets app/dist/assets -p -o 0

@@ -1,0 +1,99 @@
+#logo
+  font-size: 1em
+  max-width: 530px
+  margin: 0 auto
+
+.intro
+  text-transform: uppercase
+  text-align: center
+  height: 100%
+  .title
+    margin: 1em 0
+    font-weight: normal
+    div
+      font-size: 2.5em
+      display: inline-block
+      vertical-align: baseline
+      text-align: left
+    .vis
+      font-size: 7.5em
+      position: relative
+      top: 0.05em
+      right: 0.05em
+  .subtitle
+    margin-top: 0.8em
+    font-size: 1.8em
+    font-family: 'Open Sans', sans-serif
+
+.info
+  h2
+    margin: 2em 0
+  p
+    margin: 4em 0
+    line-height: 2em
+  h3
+    margin: 0 auto
+    width: 90%
+    margin-top: 2em
+    margin-bottom: 0.5em
+    .divider.mini
+      margin-top: 1.5em
+
+.instalacion
+  display: flex
+  &>div
+    flex-wrap: wrap
+    width: 50%
+    display: flex
+  .pistolas
+    background: url('../assets/img_pistolas.png')
+    background-position: center
+    background-size: cover
+
+  .instalacion_info
+    background: #f4f4f4
+    width: 100%
+    padding: 4em 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &>div
+      margin: 0 10% 0 25%
+      width: 65%
+    .title
+      .anios
+        font-family: "Courier"
+        font-style: oblique
+        font-size: 1.04em
+      .dia
+        font-weight: normal
+        font-family: "rockwellregular"
+        font-size: 9.6em
+      .subtitle
+        font-family: "rockwellregular"
+        font-size: 1.58em
+        margin-bottom: 0.5em
+    .descripcion
+      font-family: 'Open Sans', sans-serif
+      font-size: 0.8em
+      margin-top: 1em
+
+@media screen and (max-width: 48em)
+  .instalacion
+    display: block
+    &>div
+      width: 100%
+    .pistolas
+      padding-bottom: 79.1%
+    .instalacion_info
+      padding: 4em 0
+      &>div
+        width: 80%
+        margin: 0 auto
+
+@media screen and (max-width: 35.5em)
+  #logo
+    font-size: 0.6em
+  .intro
+    .subtitle
+      font-size: .8em

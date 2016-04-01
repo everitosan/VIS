@@ -1,0 +1,1 @@
+cp -r app/assets/fonts app/dist/assets/

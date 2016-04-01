@@ -1,0 +1,33 @@
+include ./components/menu/menu
+
+doctype html
+html(lang="en")
+  head
+    title VIS Fuerza [in]necesaria.
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="css/contacto.css")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+  body
+    +menu("CONTACTO")
+    section.formulario
+      article
+        form
+          div
+            label(for="name") Nombre:
+            input(required type="text" id="name" name="name")
+          div
+            label(for="email") E-mail:
+            input(required type="email" id="email" name="email")
+          div
+            label(for="website") Website:
+            input(required type="text" id="website" name="website")
+          div
+            label(for="comment") Comentario:
+            textarea(required id="comment" name="comment" rows="7")
+          div
+            input(type="submit" value="Enviar")
+        
+    include ./components/footer/footer
+    script(src="js/app.js")

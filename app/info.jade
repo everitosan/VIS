@@ -1,0 +1,60 @@
+include ./components/menu/menu
+doctype html
+html(lang="en")
+  head
+    title VIS Fuerza [in]necesaria.
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="css/info.css")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+  body
+    +menu("INFO")
+    .intro
+      section
+        article
+          h2
+            | LA PALABRA VIOLENCIA PROVIENE DEL LATÍN VIOLENTIA; 
+            br
+            | LA RAÍZ VIS SIGNIFICA FUERZA.
+          
+          .divider.medium
+          
+          p
+            | El proyecto Vis. Fuerza (in)necesaria. El sonido del México post-nacional consiste en realizar un corpus de obras en las que, a través del sonido como material de significación, se explore el tema de la violencia provocada por la guerra del narco o narcoguerra y la guerra contra el narco en el México contemporáneo (2006-2016), y sus derivaciones en la vida cotidiana de la población civil.
+            br
+            | Compuesto por tres instalaciones sonoras de gran formato explorará dos temas causados por la escalada de violencia reciente en México: Los desaparecidos y los huérfanos-infantes
+            br
+            | Este proyecto artístico se estructura en tres grandes instalaciones que he denominado V. F(i)n, acrónimos que responden al título general del proyecto Vis. Fuerza (in)necesaria y que se acompañan de su numeral correspondiente: V. F(i)n_1, V. F(i)n_2 y V. F(i)n_3.
+            br
+            | Vis Fuerza (in)necesaria 2 y 3 cuentan con el apoyo del Sistema Nacional de Creadores de Arte del Fondo Nacional para la Cultura y las Artes (FONCA).
+          .pdf
+            a(href="#" class="courier")
+              img(src="assets/icn_pdf.png", alt="PDF")
+              span Conoce más
+      div.flechaContainer
+        img(class="flechaScroll" src="assets/flecha.png", alt="scroll")
+    .divider
+    .autores.info
+      div
+        div.autores_info
+          h2 ¿QUIÉN HACE ESTE PROYECTO?
+          .courier
+            | LUZ MARÍA SÁNCHEZ
+          p 
+            | Es artista, investigadora y académica. Doctora en Arte por la Universidad Autónoma de Barcelona (España). Ha expuesto en Norteamérica, México y Europa. Su obra es multidisciplinar, involucra en sus instalaciones dispositivos sonoros, vídeo, imagen y objetos. Durante los últimos 10 años ha desarrollado proyectos artísticos relacionados con la narcoviolencia en México y con la violencia de los flujos migratorios en la frontera del norte.
+          .courier.obras
+            | VER OBRAS RELACIONADAS
+            img(src="assets/icn_mas.png", alt="ver_obras")
+        .v_divider
+        div.autores_info.asistente
+          h2 ASISTENTE DE PRODUCCIÓN
+          .courier
+            | ANA PAULA SÁNCHEZ CARDONA
+          p
+            | Doctora en Humanidades. Especializada en historia de la  literatura y fotografía, ha publicado artículos en revistas especializadas y un libro de poesía sobre la violencia en el México contemporáneo. Actualmente ofrece seminarios y participa en proyectos de gestión cultural en la ciudad de Barcelona y en México.
+
+    
+        
+    include ./components/footer/footer
+    script(src="js/app.js")

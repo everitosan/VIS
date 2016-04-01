@@ -1,0 +1,38 @@
+
+mixin menu(selected)
+  header
+    #menu_mobile
+      img(src="assets/menu_open.png", alt="menu")
+    if selected!="index"
+      div#homeLink
+        a(href="index.html")
+          img(src="assets/logo.png", alt="logo")
+    nav#menu
+      ul
+        if selected=="INFO"
+          li(class="link active")
+            a(href="info.html") INFO
+        else
+          li(class="link")
+            a(href="info.html") INFO
+        li
+          .v_divider
+        li(class="link")
+          a(href="VF1.html") VF1
+        li
+          .v_divider
+        if selected=="CONTACTO"
+          li(class="link active")
+            a(href="contacto.html") CONTACTO
+        else
+          li(class="link")
+            a(href="contacto.html") CONTACTO
+      img(class="cose_menu" src="assets/menu_close.png", alt="cose_menu")
+    nav#lang
+      ul 
+        li 
+          a(href="#") en
+        li 
+          .divider
+        li.active
+          a(href="#") es

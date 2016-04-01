@@ -1,0 +1,108 @@
+footer
+  background: #000
+  color: white
+  width: 100%
+
+  &>div
+    width: 75%
+    margin: 0 auto
+    &>div
+      display: inline-block
+      vertical-align: top
+  .contact
+    width: 33%
+    h4
+      font-weight: bold
+      font-size: 1.5em
+    p
+      font-family: "rockwellregular"
+      font-size: 0.8em
+  .social
+    width: 33%
+    text-align: center
+    div
+      margin: 5em 0.75em
+      display: inline-block
+      vertical-align: top
+      width: 30px
+      height: 25px
+    .twitter
+      background: url("../assets/icn_twitter.png")
+      background-position: center
+      background-repeat: no-repeat
+      background-position: center bottom
+      &:hover
+        background: url("../assets/icn_twitter_hover.png")
+        background-repeat: no-repeat
+        background-position: center bottom
+
+    .facebook
+      background: url("../assets/icn_facebook.png")
+      background-repeat: no-repeat
+      background-position: center
+      background-position: center bottom
+      &:hover
+        background: url("../assets/icn_facebook_hover.png")
+        background-repeat: no-repeat
+        background-position: center bottom
+
+    .instagram
+      background: url("../assets/icn_instagram.png")
+      background-repeat: no-repeat
+      background-position: center
+      background-position: center bottom
+      &:hover
+        background: url("../assets/icn_instagram_hover.png")
+        background-repeat: no-repeat
+        background-position: center bottom
+
+    .v_divider
+      height: 3em
+      margin: 4em 1em
+  .top
+    width: 34%
+    div
+      background: url("../assets/top.png")
+      background-position: center bottom
+      background-repeat: no-repeat
+      width: 33px
+      height: 42px
+      margin: 5em 0
+      float: right
+      cursor: pointer
+      &:hover
+        background: url("../assets/top_hover.png")
+        background-position: center bottom
+
+  .v_divider, .divider
+    background: rgba(255, 255, 255, 0.32)
+  .v_divider
+    width: 1px !important
+  .divider
+    height: 1px !important
+
+@media screen and (max-width: 48em)
+  footer
+    overflow: hidden
+    &>div
+      position: relative
+      width: 80%
+    .social, .contact
+      width: 50%
+    .social
+      position: relative
+      top: 2em
+      left: 1.5em
+      div
+        margin: 5em 0
+      .v_divider
+        margin: 4em 0
+    .top
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      z-index: 1
+      height: 42px
+      div
+        margin: 0

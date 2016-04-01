@@ -1,0 +1,1 @@
+babel app/js --out-file app/dist/js/app.js

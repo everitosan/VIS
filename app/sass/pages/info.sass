@@ -1,0 +1,46 @@
+.intro
+  padding: 7em 0 5em 0
+  position: relative
+  .divider
+    margin: 3.5em 0
+  .pdf
+    margin: 2em 0
+    span
+      position: relative
+      top: -0.7em
+.autores
+  background: #F4F4F4
+  &>div
+    display: flex
+    margin: 0 auto
+    width: 75%
+    .autores_info
+      flex-grow: 1
+      width: 50%
+      padding: 0 2.5em 0 0
+      box-sizing: border-box
+    .asistente
+      padding: 0 0 0 2.5em
+    .obras
+      cursor: pointer
+      margin: 3em 0
+      font-size: 0.8em
+      img
+        position: relative
+        top: 0.4em
+        left: 0.4em
+  .v_divider
+    background: rgb(200,200,200)
+
+@media screen and (max-width: 48em)
+  .autores
+    padding: 1em 0
+    &>div
+      display: block
+      .autores_info
+        width: 100%
+        padding: 0
+      .asistente
+        padding: 0
+    .v_divider
+      display: none
