@@ -1,2 +1,4 @@
 dist
 node_modules
+app/dist
+app/assets/ASSETS_VIS
